@@ -1,25 +1,46 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.9.34616.47
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio02", "Desafio02\Desafio02.csproj", "{DB27D6C7-386E-4536-A15C-3EFBC6BEFBD1}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DB27D6C7-386E-4536-A15C-3EFBC6BEFBD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DB27D6C7-386E-4536-A15C-3EFBC6BEFBD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DB27D6C7-386E-4536-A15C-3EFBC6BEFBD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DB27D6C7-386E-4536-A15C-3EFBC6BEFBD1}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {133CC8E3-62A6-46E5-8A7C-CD45E8A5901C}
-	EndGlobalSection
-EndGlobal
+using System;
+
+
+namespace Desafio02
+{
+    class Program
+    {
+        public static void Main()
+        {
+
+            float codigo1 = 4.00f;
+            float codigo2 = 4.50f;
+            float codigo3 = 5.00f;
+            float codigo4 = 2.00f;
+            float codigo5 = 1.50f;
+
+
+            Console.WriteLine("Digite o código: ");
+            int codigo = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite a quantidade de produto");
+            int quantidade = int.Parse(Console.ReadLine());
+
+            if (codigo == 1)
+            {
+                Console.WriteLine("O total a pagar é de R$ " + codigo1 * quantidade);
+            }
+            else if (codigo == 2)
+            {
+                Console.WriteLine("O total a pagar é de R$ " + codigo2 * quantidade);
+            }
+            else if (codigo == 3)
+            {
+                Console.WriteLine("O total a pagar é de R$ " + codigo3 * quantidade);
+            }
+            else if (codigo == 4)
+            {
+                Console.WriteLine("O total a pagar é de R$ " + codigo4 * quantidade);
+            }
+            else if (codigo == 5)
+            {
+                Console.WriteLine("O total a pagar é de R$ " + codigo5 * quantidade);
+            }
+        }
+    }
+}
